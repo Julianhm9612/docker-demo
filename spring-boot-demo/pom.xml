@@ -54,6 +54,24 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.4.2</version>
+				<configuration>
+					<container>
+						<jvmFlags>
+							<jvmFlag>-Duser.timezone=America/Bogota</jvmFlag>
+						</jvmFlags>
+					</container>
+					<from>
+						<image>openjdk:8-jdk-alpine</image>
+					</from>
+					<to>
+						<image>spring-boot-demo:1.0.0</image>
+					</to>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
