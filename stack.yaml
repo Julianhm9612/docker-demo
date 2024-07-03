@@ -1,0 +1,9 @@
+version: "3.1"
+
+services:
+  spring-boot-demo:
+    image: spring-boot-demo:latest
+    ports:
+      - "8036:8036"
+    deploy:
+      replicas: 3
