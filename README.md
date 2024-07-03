@@ -23,9 +23,20 @@ execute the following steps to build the images and run them with docker compose
 > docker-compose up
 ```
 
-4. Execute the Docker compose stop command to stop the entire application:
+or
+
+```console
+> docker-compose -f docker-compose.dev.yml up
+```
+
+or
+
+```console
+> docker-compose -f docker-compose.prod.yml up
+```
+
+4. Execute the Docker compose stop command to stop the entire application with default env vars:
 
 ```console
 > docker-compose down
 ```
-

@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
     try {
       const resFetch = await fetch('http://localhost:3002');
       const body = await resFetch.json();
-      res.send(`Here's your response from the app 1 🐳 container! And the date from app 2 is: ${body.date}`)
+      res.send(`Here's your response from the app 1 🐳 container and ${process.env.ENV} env! And the date from app 2 is: ${body.date}`)
     } catch (err) {
       res.send(err.message)
     }

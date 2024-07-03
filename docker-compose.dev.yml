@@ -8,6 +8,7 @@ services:
     ports:
       - 4001:4001
     network_mode: bridge
+    env_file: dev.env
   app-2:
     container_name: app-2
     image: app-2:1.0.0
@@ -18,4 +19,4 @@ services:
     network_mode: bridge
     volumes:
       - ./test.json:/usr/share/test.json
-    env_file: .env
+    env_file: dev.env
