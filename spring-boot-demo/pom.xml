@@ -65,7 +65,7 @@
 						</jvmFlags>
 					</container>
 					<from>
-						<image>openjdk:8-jdk-alpine</image>
+						<image>openjdk:27-ea-jdk</image>
 					</from>
 					<to>
 						<image>spring-boot-demo:1.0.0</image>

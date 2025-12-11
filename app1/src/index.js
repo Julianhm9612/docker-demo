@@ -5,7 +5,7 @@ const port = process.env.PORT || 3001;
 app.get('/', (req, res) => {
   (async () => {
     try {
-      const resFetch = await fetch('http://localhost:3002');
+      const resFetch = await fetch('http://app-2:4002');
       const body = await resFetch.json();
       res.send(`Here's your response from the app 1 🐳 container and ${process.env.ENV} env! And the date from app 2 is: ${body.date}`)
     } catch (err) {
